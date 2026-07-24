@@ -40,48 +40,45 @@
     </header>
     <main>
         <article>
-        <img src="imagem.blog.png" alt="Imagem Conceitual de Tecnologia e Educação"> 
-        <div>
-            <h2>Como a Inovação Está Transformando o Aprendizado?</h2>
-            <p>A integração da tecnologia na educação vai muito além do uso de computadores ou tablets em sala de aula. Ela representa uma mudança fundamental na forma como o conhecimento é construído, permitindo que estudantes aprendam no seu próprio ritmo e de maneira muito mais interativa.</p>
-            <p>Com o acesso a ferramentas digitais, plataformas de aprendizado adaptativo e conteúdos multimídia, a sala de aula se transforma em um ambiente dinâmico, colaborativo e alinhado com as exigências do mundo moderno.</p>
-            <button>❤️<span>0</span></button>
-            <button>👍<span>0</span></button>
-        </div>
-        <img src="imagem.blog.png" alt="Imagem Conceitual de Desafios Digitais"> 
-        <div>
-            <h2>Os Desafios da Inclusão Digital na Educação</h2>
-            <p>Apesar dos incalculáveis benefícios da tecnologia, a desigualdade de acesso à internet e a dispositivos de qualidade ainda representa um grande desafio em diversas regiões.</p>
-            <p>Para que a transformação digital seja inclusiva, é essencial investir em infraestrutura nas escolas e na capacitação contínua dos educadores para o uso pedagógico dessas ferramentas.</p>
-            <button>❤️<span>0</span></button>
-            <button>👍<span>0</span></button>
-        </div>
+            <div>
+                <img src="imagem.blog.png" alt="Imagem Conceitual de Tecnologia e Educação"> 
+                <h2>Como a Inovação Está Transformando o Aprendizado?</h2>
+                <p>A integração da tecnologia na educação vai muito além do uso de computadores ou tablets em sala de aula. Ela representa uma mudança fundamental na forma como o conhecimento é construído, permitindo que estudantes aprendam no seu próprio ritmo e de maneira muito mais interativa.</p>
+                <p>Com o acesso a ferramentas digitais, plataformas de aprendizado adaptativo e conteúdos multimídia, a sala de aula se transforma em um ambiente dinâmico, colaborativo e alinhado com as exigências do mundo moderno.</p>
+                <button>❤️<span>0</span></button>
+                <button>👍<span>0</span></button>
+            </div>
+            <div>
+                <img src="imagem.blog.png" alt="Imagem Conceitual de Desafios Digitais"> 
+                <h2>Os Desafios da Inclusão Digital na Educação</h2>
+                <p>Apesar dos incalculáveis benefícios da tecnologia, a desigualdade de acesso à internet e a dispositivos de qualidade ainda representa um grande desafio em diversas regiões.</p>
+                <p>Para que a transformação digital seja inclusiva, é essencial investir em infraestrutura nas escolas e na capacitação contínua dos educadores para o uso pedagógico dessas ferramentas.</p>
+                <button>❤️<span>0</span></button>
+                <button>👍<span>0</span></button>
+            </div>
         </article>
     </main>
 </body>
     <script>
-        const botoes = document.querySelectorAll("button");
-        botoes.forEach(function(botao) {
+        botoes.forEach(function (botao) {
             let curtiu = false;
             botao.addEventListener("click", botaoClicado);
             function botaoClicado() {
                 console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                texto.textContent++;
+            }
+        })
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
                 if (curtiu === false){
                     texto.textContent++;
                     curtiu = true;
-                    } else {
+                } else {
                     texto.textContent--;
                     curtiu = false;
                 }
-                let texto = botao.querySelector("span");
-                texto.textContent++;
-        }
-        });
-        botao.addEventListener("click", botaoClicado);
-        function botaoClicado() {
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            texto.textContent++;
-        }
+            }
     </script>
 </html>
