@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kaua-pagina-web</title>
+    <title></title>
     <style>
         header {
             background-color: #222444;
@@ -22,8 +22,8 @@
             display: flex;
         }
         article {
-    display: flex;
-}
+            display: flex;
+        }
         img {
             width: 80px;
             height: 80px;
@@ -45,8 +45,8 @@
             <h2></h2>
             <p class="artigo-autor">Por: Kaua Matheus Munis Dallassenta</p>
             <p></p>
-            <button>👍<span>0</span></button>
-            <button>❤️<span>0</span></button>
+            <button>👍🏼<span>0</span></button>
+            <button>♥️<span>0</span></button>
         </div>
     </article>
     <article>
@@ -55,26 +55,29 @@
             <h2></h2>
             <p class="artigo-autor">Por: Kaua Matheus Munis Dallassenta</p>
             <p></p>
-            <button>👍<span>0</span></button>
-            <button>❤️<span>0</span></button>
+            <button>👍🏼<span>0</span></button>
+            <button>♥️<span>0</span></button>
         </div>
     </article>
 </main>
 </body>
     <script>
+        const botoes = document.querySelectorAll("button");
         botoes.forEach(function (botao) {
-    let curtiu = false;
-    botao.addEventListener("click", botaoClicado);
-    console.log("fui clicado");
-    function botaoClicado() {
-        console.log("fui clicado");
-        let texto = botao.querySelector("span");
-    } else {
-        texto.textContent--;
-        curtiu = false;
-    }
-    }
-});
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        })
     </script>
 </body>
 </html>
