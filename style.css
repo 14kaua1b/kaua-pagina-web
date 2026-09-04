@@ -5,17 +5,28 @@
     --cor-texto: #000000;
     --cor-contraste: #000000;
     --cor-botao: #000000;
+    --fonte-texto: ;
 }
 .tema-escuro {
     --cor-primaria: #ffffff;
     --cor-secundaria: #000000;
-    --cor-fundo: #ffffff;
-    --cor-texto: #000000;
-    --cor-contraste: #000000;
-    --cor-botao: #000000;
+    --cor-fundo: #000000;
+    --cor-texto: #ffffff;
+    --cor-contraste: #ffffff;
+    --cor-botao: #ffffff;
+}
+.tema-escuro a {
+    color: var(--cor-secundaria);
+}
+.tema-escuro p {
+    color: var(--cor-texto);
+}
+.tema-escuro header p {
+    color: var(--cor-contraste);
 }
 body {
     max-width: 100vw;
+    font-family: ;
 }
 header {
     background-color: #000000;
