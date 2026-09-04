@@ -1,17 +1,33 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-fundo: #ffffff;
+    --cor-texto: #000000;
+    --cor-contraste: #000000;
+    --cor-botao: #000000;
+}
+.tema-escuro {
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #000000;
+    --cor-fundo: #ffffff;
+    --cor-texto: #000000;
+    --cor-contraste: #000000;
+    --cor-botao: #000000;
+}
 body {
     max-width: 100vw;
 }
 header {
-    background-color: #010E26;
-    color: #16498C;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
     margin: 0 auto;
     padding: 16px;
 }
 
 main {
-    background-color: #16498C;
-    color: #010E26;
+    background-color: var(--cor-fundo);;
+    color: var(--cor-primaria);
     margin: 0 auto;
     padding: 16px;
     display: flex;
@@ -20,7 +36,7 @@ main {
 
 article {
     display: flex;
-    border: 1px solid #183C63;
+    border: 1px solid var(--cor-primaria);
     margin: 16px;
     gap: 16px;
     padding: 16px;
