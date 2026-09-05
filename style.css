@@ -4,7 +4,7 @@
   --cor-fundo: #ffffff;
   --cor-texto: #000000;
   --cor-contraste: #ffffff;
-  --cor-botao: #ffffff;
+  --cor-botao: #000000;
   --fonte-texto: 'Segoe UI', sans-serif;
 }
 * {
@@ -15,7 +15,7 @@
   --cor-secundaria: #000000;
   --cor-fundo: #000000;
   --cor-texto: #ffffff;
-  --cor-contraste: #ffffff;
+  --cor-contraste: #000000;
   --cor-botao: #ffffff;
 }
 .tema-escuro a {
@@ -78,9 +78,6 @@ article {
 img {
   width: 80px;
   height: 80px;
-}
-.artigo-autor {
-  font-weight: bold;
 }
 .btn-tema-escuro {
   position: fixed;
