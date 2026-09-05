@@ -14,7 +14,7 @@
     --cor-primaria: #ffffff;
     --cor-secundaria: #000000;
     --cor-fundo: #000000;
-    --cor-texto: #000000;
+    --cor-texto: #ffffff;
     --cor-contraste: #ffffff;
     --cor-botao: #ffffff;
 }
@@ -39,7 +39,7 @@
     color: var(--cor-primaria);
 }
 .tema-escuro .artigo-autor {
-    color: var(--fonte-texto);
+  color: var(--cor-texto);
 }
 .tema-escuro .btn-tema-escuro {
     background-color: var(--cor-secundaria);
@@ -74,7 +74,7 @@ article {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 img {
     width: 80px;
