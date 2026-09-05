@@ -15,8 +15,8 @@
   --cor-secundaria: #000000;
   --cor-fundo: #000000;
   --cor-texto: #ffffff;
-  --cor-contraste: #ffffff;
-  --cor-botao: #000000;
+  --cor-contraste: #000000;
+  --cor-botao: #ffffff;
 }
 .tema-escuro a {
   color: var(--cor-secundaria);
