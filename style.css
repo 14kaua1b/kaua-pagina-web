@@ -12,7 +12,7 @@
 }
 .tema-escuro {
     --cor-primaria: #ffffff;
-    --cor-secundaria: #ffffff;
+    --cor-secundaria: #000000;
     --cor-fundo: #ffffff;
     --cor-texto: #000000;
     --cor-contraste: #ffffff;
