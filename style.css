@@ -7,6 +7,9 @@
     --cor-botao: #ffffff;
     --fonte-texto: 'Segoe UI', sans-serif;
 }
+* {
+    transition: background-color 0.8s ease;
+}
 .tema-escuro {
     --cor-primaria: #ffffff;
     --cor-secundaria: #ffffff;
