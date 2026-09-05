@@ -39,7 +39,7 @@
     color: var(--cor-primaria);
 }
 .tema-escuro .artigo-autor {
-  color: var(--cor-texto);
+color: var(--fonte-texto);
 }
 .tema-escuro .btn-tema-escuro {
     background-color: var(--cor-secundaria);
@@ -74,7 +74,7 @@ article {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 img {
     width: 80px;
