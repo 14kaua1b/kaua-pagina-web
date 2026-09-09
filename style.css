@@ -15,7 +15,7 @@ transition: background-color 0.8s ease;
 --cor-secundaria: #000000;
 --cor-fundo: #000000;
 --cor-texto: #ffffff;
---cor-contraste: #000000;
+--cor-contraste: #ffffff;
 --cor-botao: #ffffff;
 }
 .tema-escuro a {
